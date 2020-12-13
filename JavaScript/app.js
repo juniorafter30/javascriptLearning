@@ -201,10 +201,70 @@ arr.forEach((el) => {console.log(el)});
 
 
 
-const cities = ['Radom', 'Warszawa', 'Berlin'];
+/*const cities = ['Radom', 'Warszawa', 'Berlin'];
 
 for(let i=0; i<cities.length; i++){
-    console.log(`to jest miasto: ${cities[i]}`);
+    console.log(`to jest miasto: ${cities[i]}`)};
+
+
+
+
+
+let xx = 0;
+
+while (xx <=10) {
+    console.log(xx);
+    xx += 2;
 
 }
 
+*/
+
+
+
+
+
+
+
+
+
+let cities = ["radom","warszawa","krakow","bytom"];
+
+for (let i = 0; i < cities.length; i++) {
+    console.log(`To jest dokladnie : ${cities[i]}`)
+}
+
+
+
+
+
+
+let k = 20;
+
+do { k-=3;
+} while (k=0);
+
+
+console.log(k)
+
+
+
+
+let numberos = [5,8,10,25,48,60];
+
+
+
+
+
+
+
+
+for ( let numbern of numberos) {
+    if ( numbern%2 === 0)
+    {
+    console.log(`liczba ${numbern} jest po dzielna przez 2`);
+    }
+    else {
+console.log(`liczba ${numbern} nie jest podzielna przez 2 `);
+    };
+}
