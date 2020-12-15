@@ -557,6 +557,67 @@ function add (a,b) {
 
 console.log(add(2,5))
 
+//3 Jezeli funkcja jedynie zwraca wartosci, nie musimy uzywac slowa return
 
 const mnozenie = (x,y) => x * y;
+
 console.log(mnozenie(4,5))
+
+
+const days = ['pon', 'wt', 'sr'];
+
+const newDays = days.forEach(function(x){
+    console.log(x);
+})
+
+const newwDays = days.forEach(e =>  console.log(e));
+
+// domysle parametry funkcji
+
+
+const helloo = (name = `drogi uzytkowniku`) => { return `Witaj ${name} jak sie masz?`}
+
+console.log(helloo('Ania'));
+
+
+const dodanko = (x=10,y=20) => (x+y);
+console.log(dodanko(5));
+
+
+
+
+
+
+const imionka = name => console.log(`Mam na imie ${name}`);
+
+imionka('karol');
+
+
+
+const prosteDodawanie = (x,b) => (x+b);
+
+console.log(prosteDodawanie(5,6));
+
+
+
+//Spread sluzy do rozsmarowywania tablicy, zamiast tablicy oddaje pojedynczy string 
+
+const tabu = [1,2,3,4,5];
+
+console.log(...tabu);
+
+
+//Rest 
+function podwojamy(x){
+    return x *2 
+}
+
+function numerki (x,y,...z) {
+    console.log(x,y,z);
+    console.log(z.map(podwojamy));
+}
+;
+numerki(1, 2, 3,4,5,6,7,9);
+
+
+
