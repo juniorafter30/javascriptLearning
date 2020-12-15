@@ -147,9 +147,9 @@ for (let i = 0; i < liczby.length; i++){
 
 const kolory = ['zielony', 'czerwony', 'niebieski']
 
-for(let i = 0; i < kolory.length; i++) {
-    console.log(kolory[i])
-};
+//for(let i = 0; i < kolory.length; i++) {
+////    console.log(kolory[i])
+///};
 
 
 //WHILE 
@@ -268,3 +268,295 @@ for ( let numbern of numberos) {
 console.log(`liczba ${numbern} nie jest podzielna przez 2 `);
     };
 }
+
+
+
+//
+
+//console.log(tablica);
+
+
+//tablica.unshift()
+
+
+
+
+
+//METOD MAP - sluzy do wykonywania funkcji na kazdym elemencie zbioru
+
+
+const tablica = [1,2,3,4,5];
+
+
+function multiply(x){
+    console.log(x*2)
+
+
+}
+
+tablica.map(multiply);
+
+
+const lol = ['ashe','graves','lee'];
+
+
+function bigLol(x){
+    console.log(x.toUpperCase());
+
+}
+lol.map(bigLol);
+
+// METODA CONCAT - sluzy do dodawania tablic
+
+const nums = [1,2,3];
+const abcd = ['a','b','c'];
+
+
+
+const newNum = nums.concat(abcd);
+
+console.log(newNum);
+
+
+//Spread 
+const piciu = ['piwko','pepsi','winko'];
+
+const jedzenie = ['burger','pizza','alicja'];
+
+
+const dzisiaj = [...piciu,...jedzenie];
+console.log(dzisiaj);
+
+
+//SLICE  metoda niedestrukcyjna - metoda do wyciniania fragmentow tablicy
+
+// 1 argument to  index elementu rozpoczynajacego
+// 2 argument to index elementu to ktorego wycielismy ale bez tego elementu
+
+const n = [1,2,3,4,5,6];
+const n2 = n.slice(0,3);
+console.log(n2);
+
+
+//SPLICE -  metoda destrukcyjna
+
+//1 argument to index elementu rozpoczynajacego
+//2 argument to ilosc elementow ktore chcemy wyciac
+//3 nowy element ktory dodajemy w miejsce wycietych
+
+
+const liczby2 = [1,2,3,4,5,6,7,8,9,0]
+const liczny2 = liczby2.splice(0,5);
+
+console.log(liczny2)
+
+
+
+
+const arrr = ['zielony','czerwony','niebieski'];
+
+
+console.log(arrr.join());
+
+
+const mimi = "asdasdasd asdasdasdasd 1211d12131d13d1d13d13d13d1rgg3g";
+
+console.log(mimi.split('1'));
+
+
+
+
+
+let nunu = [1,34343,23,45,66,88,90]
+
+function nun (x){
+    return x % 2 === 0;
+}
+
+
+console.log(nunu.filter(nun)); 
+
+
+const newNunu = nunu.forEach(x => console.log(x*2));
+
+
+
+console.log(nunu.sort((x,y) => x-y));
+
+
+
+console.log(nunu.includes(1));
+
+
+
+
+
+
+
+
+
+let tabliczka = [1,2,3,4,5];
+tabliczka.unshift(1);
+console.log(tabliczka);
+
+
+let newTabliczka = tabliczka.pop();
+console.log(newTabliczka);
+console.log(tabliczka);
+
+
+
+
+let nowaczek = [];
+nowaczek.push('eloszka');
+console.log(nowaczek);
+
+
+
+
+let tab1 = [1,2,3];
+let tab2 = [4,5,6];
+let tab3 = tab1.concat(tab2);
+
+
+console.log(tab3);
+
+
+let tab4 = [...tab1,...tab2];
+console.log(tab4);
+
+
+
+let forfor = [1,2,3,4,5,6];
+
+
+forfor.forEach(x => console.log(x*5));
+
+
+
+let  koloryZadanie = ['zielony'];
+koloryZadanie.push('niebieski');
+koloryZadanie.unshift('czerwony');
+
+console.log(koloryZadanie);
+
+
+
+console.log(koloryZadanie.join())
+
+
+let stringg = 'zielony';
+
+console.log(stringg.charAt(0).toUpperCase() + stringg.slice(1,7));
+
+
+
+
+
+//for (let i = 0; i<koloryZadanie.length ; i++) {
+  //  console.log(`Moj ulubiony kolor to ${koloryZadanie[i].charAt(0).toUpperCase() + koloryZadanie[i].slice(1)}`)
+
+
+
+
+
+//}
+
+
+let samochody = 'Audi,Mercedes,Bmw,Nissan,Dodge';
+console.log(samochody);
+
+let arrSamochody = samochody.split(',')
+console.log(arrSamochody);
+
+
+(arrSamochody.length > 3) ? console.log("Jest ok") : console.log("nie jest ok");
+
+
+if (arrSamochody.includes('Audi')) {
+    console.log(arrSamochody.push('Fiat'));
+} else {
+    console.log(arrSamochody.pop());
+};
+
+console.log(arrSamochody);
+
+for (let i = 0; i < arrSamochody.length; i++) {
+    console.log(`${arrSamochody[i].toUpperCase()}`);
+}
+
+
+// Deklaracja funkcji;
+
+function test (){
+    console.log("czesc mordo");
+
+};
+
+test();
+
+// wyrazenie funkcyjne;
+
+
+let funkcja = function () {console.log('elo mordziatko')};
+
+funkcja();
+
+
+
+function num (x,y){console.log(x+y)}
+
+num(2,5);
+
+
+function hello (name,age) {
+    console.log(`Mam na imie ${name} i mam ${age}lat`)
+};
+
+hello('Karol',30);
+
+
+
+const h1 = document.querySelector('h1');
+
+h1.addEventListener('click', function (){
+    console.log('kliknieto mnie w leb');
+})
+
+
+
+// Funkcja strzalkowa
+
+const test1 = function (name) {console.log('Piekne imie')};
+test1('');
+
+
+const test2 = (name) => {console.log(name)};
+
+test2("ania");
+
+
+// ZASADY
+
+
+//1 NIE MUSIMY PODAWAC ARGUMENTOW DO FUNKCJI STRZALKOWEJ
+
+let test10 = () => {};
+
+
+//2 JEZELI FUNKCJA WYKONUJE JEDNO ZADANIE I MA JEDEN ARGUMENT NIE MUSIMY KORZYSTAC Z NAWIASOW
+
+
+const test11 = imie => console.log(imie);
+test11('karol');
+
+
+function add (a,b) {
+    return a * b
+}
+
+console.log(add(2,5))
+
+
+const mnozenie = (x,y) => x * y;
+console.log(mnozenie(4,5))
