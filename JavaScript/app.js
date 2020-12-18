@@ -755,3 +755,22 @@ let podzielniaki = numberries.forEach(funk);
 
 
 
+
+// POBIERANIE ELEMNTOW 
+
+// getElementById
+const liID = document.getElementById('item');
+
+//getElementByTagName
+
+const liTags = document.getElementsByTagName('li');
+console.log(liTags);
+
+//getElementByClassName
+const liList = document.getElementsByClassName('item-class');
+
+//querySelector
+const qsList = document.querySelector('.item-class');
+
+//querySelectorAll
+const qsAllList = document.querySelectorAll('li');
