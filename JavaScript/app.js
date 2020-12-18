@@ -621,3 +621,88 @@ numerki(1, 2, 3,4,5,6,7,9);
 
 
 
+const name = 'Klaudia';
+
+function test () {
+    const name = "Adam";
+    const age = "20";
+    console.log(`Clg w funkcji ${name}`);
+    console.log(`clg w funkcji ${age}`);
+
+
+}
+test();
+
+console.log(name);
+
+
+const zbiorek = [0.3,5,'ghj'];
+
+
+// forEach
+
+const nowyZbiorek = zbiorek.forEach(e=>console.log(`${e} podniesione do kwadratu to ${e**2}`));
+
+
+
+// callback
+const im = ['Ania', "Bania", "JudytaS", 'Ziomek'];
+
+const bigNames = name => name.toUpperCase();
+
+
+const biggies = im.map(bigNames);
+
+
+console.log(biggies);
+
+
+//////////////////////////////////////////////////
+
+let $score;
+
+const dodaj = (a,b) => {
+    $score = a + b;
+
+    if ($score%2==0) { parzysta()
+
+    } else {
+        nieparzysta()
+    }
+};
+
+function parzysta () {
+    console.log(`Liczba ${$score} jest parzysta`);
+}
+
+const nieparzysta = function (){
+    console.log(`Liczba ${$score} jest nieparzysta`)
+};
+
+dodaj(1,3);
+
+
+
+
+
+
+let $celsius;
+let $temp;
+
+const fahrenheit = c => {
+ $celsius = c;
+ $temp = c*1.8+32; 
+}
+
+fahrenheit(20);
+
+console.log(`${$celsius}\u00B0C to ${$temp}\u00B0F`);
+
+
+// zmiennia, tablica, petla for, funkcja strzalkowa, modulo, foreach, callback
+
+
+const numP = 10;
+const numberries = [];
+
+
