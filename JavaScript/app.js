@@ -699,10 +699,59 @@ fahrenheit(20);
 console.log(`${$celsius}\u00B0C to ${$temp}\u00B0F`);
 
 
+
+
 // zmiennia, tablica, petla for, funkcja strzalkowa, modulo, foreach, callback
 
 
 const numP = 10;
-const numberries = [];
+let numberries = [];
+
+for (i=0; i<numP; i++) {
+numberries.push(i);
+};
+
+console.log(numberries);
+
+let funk = x => {
+    if (x%3===0 && x!==0){console.log(`${x} jest podzielne przez 3`)}
+    else {console.log(`${x} nie jest podzielne przez 3`)}
+}
+
+let podzielniaki = numberries.forEach(funk);
+
+
+
+
+//API to nie biblioteka!!!!
+
+
+// API to aplikacja ktora komunikuje sie z innym programem
+// API wysyla zapytanie do aplikacji a nastepnie dostaje od niej odpowiedz
+
+
+// DOM DOCUMENT OBJECT MODEL
+// reprezentuje caly plik html
+
+
+// WINDOW najwyzej w hierarchi, zawiera wszystkie mozliwe komendy
+
+
+
+//HOISTING - wynoszenie na gore niektorych rzeczy
+// np VAR lub funkcja np
+
+// test()
+// function test = () {};
+
+
+//nie wynosi funkcji ktore zostana przypisane do jakies zmiennej
+
+// np test2()
+//const test 2 =() => {};
+
+
+
+
 
 
