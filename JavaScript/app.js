@@ -829,3 +829,197 @@ const usunP = document.querySelector('.usunP');
 
 const usuwanie = usunDiv.removeChild(usunP);
 console.log(usuwanie);
+
+
+/*
+1.attributes - Zwraca tablicę atrybutów elementu.
+
+2.childNodes - Zwraca tablicę węzłów potomnych elementu
+
+3.className - Pobiera/ustawia klasę elementu.
+
+4.clientHeight - Własność DHTML-a, reprezentuje wewnętrzną wysokość elementu.
+
+5.clientLeft - Długość od lewego obramowania elementu wyrażona w pikselach. Aktualnie nie obsługiwana.
+
+clientTop
+Długość od górnego obramowania elementu wyrażona w pikselach. Aktualnie nie obsługiwana.
+
+clientWidth
+Własność DHTML-a, reprezentuje wewnętrzną szerokość elementu.
+
+dir
+Pobiera/ustawia kierunkowość (ang. directionality) elementu.
+firstChild
+Zwraca pierwsze dziecko bieżącego węzła.
+id
+Pobiera/ustawia id elementu.
+innerHTML
+innerHTML zwraca całą zawartość elementu wraz ze znacznikami.
+lang
+Określa język bazowy dla wartość atrybutów i tekstowej zawartości elementu.
+lastChild
+Zwraca ostatnie dziecko bieżącego węzła.
+length
+Zwraca ilość elementów listy (np. childNodes).
+localName
+Zwraca lokalną część uściślonej nazwy węzła.
+name
+Pobiera lub ustawia atrybut name - dostępne nie dla wszystkich elementów.
+namespaceURI
+URI przestrzeni nazw węzła lub NULL, jeśli nie określono przestrzeni nazw.
+nextSibling
+Zwraca węzeł bezpośrednio następny w drzewie dokumentu.
+nodeName
+Zwraca nazwę biężącego węzła.
+nodeType
+Zwraca typ bieżącego węzła.
+nodeValue
+Zwraca wartość bieżącego węzła.
+offsetHeight
+offsetHeight jest własnością DHTML-a, zwracającą wysokość elementu względem układu.
+offsetLeft
+offsetLeft pobiera/ustawia ilość pikseli, jaka dzieli element od lewej strony wewnątrz węzła offsetParent.
+offsetParent
+offsetParent zwraca referencję do obiektu, w którym obecny element się znajduje (tj. rodzica).
+offsetTop
+offsetTop zwraca pozycję obecnego elementu względem góry węzła offsetParent.
+offsetWidth
+offsetWidth jest własnością DHTML-a, zwracającą szerokość elementu względem układu.
+ownerDocument
+Zwraca dokument, w którym znajduje się bieżący węzeł.
+parentNode
+Zwraca rodzica bieżącego węzła.
+prefix
+Zwraca prefiks przestrzeni nazw obecnego węzła bądź NULL, jeśli nie określono przestrzeni nazw.
+previousSibling
+Zwraca węzeł bezpośrednio poprzedni w drzewie dokumentu.
+scrollHeight
+Własność DHTML-a, zwraca wysokość zawartości elementu z paskiem przewijania.
+scrollLeft
+pobiera bądź ustawia liczbę pikseli, o którą zostanie przewinięta zawartość dokumentu. Kierunek przewijania odbywa się w lewo.
+scrollTop
+Własność DHTML-a, która ustawia bądź pobiera odległość między górą elementu a najwyższym punktem zawartości elementu z paskiem przewijania.
+scrollWidth
+Zwraca the width of the scroll view of an element.
+style
+Zwraca blok reguł stylów dla elementu.
+tabIndex
+Pobiera/ustawia pozycję elementu w porządku tabulacji.
+tagName
+Zwraca nazwę elementu.
+textContent
+Pobiera/ustawia zawartość tekstu elementu włączając jego potomków.
+Metody
+addEventListener
+Pozwala zarejestrować obserwatora zdarzeń dla celu zdarzenia.
+appendChild
+Wstawia określony węzeł do listy węzłów dokumentu.
+blur
+Dezaktywuje bieżący element.
+click
+Wywołuje kliknięcie na elemencie.
+cloneNode
+Zwraca kopię bieżącego węzła.
+dispatchEvent
+Pozwala przekazać wywołania zdarzeń do modelu zdarzeń w implementacji DOM.
+focus
+Aktywuje bieżący element.
+getAttribute
+Zwraca wartość atrybutu o podanej nazwie.
+getAttributeNS
+Zwraca wartość atrybutu o podanej nazwie i przestrzeni nazw.
+getAttributeNode
+Zwraca atrybut elementu jako osobny węzeł.
+getElementsByTagName
+Zwraca elementy o podanej nazwie będące potomkami bieżącego elementu.
+hasAttribute
+Zwraca wartość logiczną zależnie od tego, czy element posiada atrybut o podanej nazwie.
+hasAttributeNS
+Zwraca wartość logiczną zależnie od tego, czy element posiada atrybut o podanej nazwie i przestrzeni nazw.
+hasAttributes
+Zwraca wartość logiczną zależnie od tego, czy element posiada jakiekolwiek atrybuty.
+hasChildNodes
+Zwraca wartość logiczną zależnie od tego, czy element posiada dzieci.
+insertBefore
+Metoda pozwala wstawić węzeł przed bieżącym elementem w DOM.
+item
+Zwraca węzeł z drzewa wg podanego indeksu.
+normalize
+Metoda zapisuje bieżący węzeł i całe drzewo znajdujące się wewnątrz w "znormalizowanej" formie.
+removeAttribute
+Usuwa atrybut elementu.
+removeAttributeNode
+Usuwa określony atrybut elementu.
+removeChild
+Usuwa węzeł potomny bieżącego elementu.
+removeEventListener
+Pozwala usunąć obserwatora zdarzeń z celu zdarzenia.
+replaceChild
+Metoda replaceChild() zastępuje węzeł potomny bieżącego elementu innym węzłem.
+setAttribute
+Dodaje nowy atrybut bądź zmienia wartość atrybutu bieżącego elementu.
+setAttributeNS
+Dodaje nowy atrybut bądź zmienia wartość atrybutu bieżącego elementu, wg podanej nazwy i przestrzeni nazw.
+setAttributeNode
+Dodaje nowy węzeł atrybutu do bieżącego elementu.
+setAttributeNodeNS
+Dodaje nowy węzeł atrybutu do bieżącego elementu wg podanej nazwy i przestrzeni nazw.
+supports
+Sprawdza, czy implementacja DOM pozwala na wykorzystanie konkretnej możliwości. */
+
+// ADD EVENT LISTENER 
+
+//target.addEventListener(type,listener,useCapture);
+
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const btn3 = document.querySelector('.btn3');
+
+btn1.addEventListener('click', function(){
+    console.log('kliknieto mnie xD');
+});
+
+
+const najazd = () => console.log('najechano mnie');
+
+
+btn2.addEventListener('mouseover', najazd);
+
+console.log(btn2);
+
+
+btn3.addEventListener('dblclick', function(){
+    console.log('double click');
+});
+
+
+// addEventListener na dole !  - pierwsza funkcja 
+/*
+click	            odpalane, gdy element został kliknięty (np. input)
+mouseover	        odpalane, gdy kursor znalazł się na elemencie
+mouseout	        odpalane, gdy kursor opuścił element
+mouseenter	        odpalane, gdy kursor znalazł się na elemencie
+mouseleave	        odpalane, gdy kursor opuścił element
+dblclick	        odpalane, gdy podwójnie klikniemy na element (np. input)
+change	            odpalane, gdy opuściliśmy element, i zmienił on swoją zawartość (np. pole tekstowe), ale też na zmianę np. selekta, checkboxa itp.
+submit	            odpalane, gdy formularz jest wysyłany
+resize	            odpalane, gdy rozmiar okna przeglądarki jest zmieniany
+focus	            odpalane, gdy element stał się aktywny (np. pole tekstowe, odnośnik, button, element z tabindex)
+blur	            odpalane, gdy element przestał być aktywny (np. opuściliśmy input)
+keydown	            odpalane, gdy został naciśnięty klawisz na klawiaturze
+keyup	            odpalane gdy puścimy klawisz na klawiaturze
+keydown	            odpalane gdy naciśniemy klawisz, lub go przytrzymamy
+input	            odpalany gdy coś wpiszemy do pola, wybierzemy coś z selecta, klikniemy na input itp.
+load	            odpalane, gdy obiekt został załadowany (np. cała strona, pojedyncza grafika)
+contextmenu	        odpalane, gdy kliknięto prawym klawiszem myszki i pojawiło się menu kontekstowe
+wheel	            odpalane, gry kręcimy kółeczkiem myszki
+select	            odpalane, gdy zawartość obiektu została zaznaczona
+unload	            odpalane, gdy użytkownik opuszcza dana stronę
+animationstart	    odpalane, gdy animacja css się zacznie
+animationend	    odpalane, gdy animacja css się zakończy
+animationiteration	odpalane, gdy animacja css zrobi jedną iterację
+transitionstart	    odpalane, gdy transition css się zacznie
+transitionend	    odpalane, gdy transition css się zakończy
+transitionrun	    odpalane, gdy transition zostanie stworzone (odpalane przed rozpoczęciem opóźnienia)
+*/
