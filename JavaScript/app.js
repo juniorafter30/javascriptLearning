@@ -756,7 +756,7 @@ let podzielniaki = numberries.forEach(funk);
 
 
 
-// POBIERANIE ELEMNTOW 
+// POBIERANIE ELEMEmNTOW 
 
 // getElementById
 const liID = document.getElementById('item');
@@ -770,7 +770,62 @@ console.log(liTags);
 const liList = document.getElementsByClassName('item-class');
 
 //querySelector
+// const qsList = document.querySelectorAll('#id lub .klasa')
+// mozemy korzystac z dziedziczenia jak w css np ul li:last child
 const qsList = document.querySelector('.item-class');
 
 //querySelectorAll
 const qsAllList = document.querySelectorAll('li');
+
+
+
+
+//ZYWE KOLEKCJE
+
+// W przypadku pracy np na petlach pobranymi elementami, querySelectorAll nie bedzie widzial "sztucznie dodanych"
+// elementow w java scripcie. Nalezy skorzystac z z getElemementsByTagName lub getElementsByTagName
+
+
+// TWORZENIE ELEMEmNTOW
+
+//INNERHTML - zwraca to co znajduje sie w tagu
+//OUTERHTML - zwraca caly pobrany obiekt
+
+
+const ulList = document.createElement('ul');
+document.body.appendChild(ulList)    
+const liItem = document.createElement('li');
+ulList.appendChild(liItem);
+//liItem.textContent = " mOr D o "
+
+const btn = document.querySelector('button');
+console.log(btn.innerHTML);
+
+btn.innerHTML ="czesc";
+
+const one = document.querySelector('.one');
+const two = document.querySelector('.two');
+
+one.textContent = "morda";
+two.innerText = "borda";
+
+
+// Usuwanie elementow
+
+const usunDiv = document.querySelector('.usunDiv');
+const usunP = document.querySelector('.usunP');
+
+
+// usuniecie tresci w tagu, ale tag zostaje
+
+//p.innerHTML = "";
+
+// nie pokazuje tresci w tagu
+//p.style.display = "none";\
+
+
+
+// rodzic.removeChild(dziecko)
+
+const usuwanie = usunDiv.removeChild(usunP);
+console.log(usuwanie);
