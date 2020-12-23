@@ -1034,14 +1034,14 @@ transitionrun	    odpalane, gdy transition zostanie stworzone (odpalane przed ro
 
 //ADD REMOVE AND TOGGLE;
 
-const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('.btn2');
-const btn3 = document.querySelector('.btn3');
-const p = document.querySelector('p');
+//const btn1 = document.querySelector('.btn1');
+//const btn2 = document.querySelector('.btn2');
+//onst btn3 = document.querySelector('.btn3');
+//const p = document.querySelector('p');
 
 //callback
-const dodaj = () => p.classList.add('new-color');
-btn1.addEventListener('click', dodaj);
+//const dodaj = () => p.classList.add('new-color');
+//btn1.addEventListener('click', dodaj);
 
 // funkcja anonimowa
 btn2.addEventListener('click', function() {p.classList.remove('new-color')});
@@ -1058,3 +1058,88 @@ btn3.addEventListener('click', toggle);
 //Zadanie 1
 
 
+
+const lista = document.createElement('ul');
+document.body.appendChild(lista)    
+
+for(i=1; i<=3; i++){
+    const punkty = document.createElement('li');
+    lista.appendChild(punkty).innerText = i;
+}
+
+
+lista.lastChild.innerText = 'To jest ostatni wezel';
+
+//
+
+
+//setTimeout  sluzy do opozniania wykonywania funkcji, setInterval(nazawa funkcji, czas w milisekundkach)
+    
+
+// setInterval sluzy do opozniania wykonywania funkcji w stalych odstepach czasu
+
+//function test () {
+  //  console.log('czesc');
+//}
+
+//setInterval(test, 1000)
+    
+
+// Alert alert("hey")
+// Confirm confirm('')
+// Prompt prompt('')
+
+
+
+/*if (confirm('Wybierz sobie cos')) {
+    alert('wybrales ok')
+} else {
+    console.log('wybrales cancel');
+}*/
+
+
+/*const imionko = prompt('Jak masz na imie?');
+console.log(`Czesc ${imionko}`) */
+
+
+
+// MATH
+
+
+
+// console.log(Math.floor(Math.random() * 10 ));
+
+// 0 - 1
+
+
+// const number = prompt('Podaj liczbe 0-1');
+
+// if(number == Math.floor(Math.random() * 2 )) {
+//     console.log('Wygrales')
+// } else {
+//     console.log('Przegrales');
+// }
+
+// Atrybuty
+
+//nazwaelementu.setAttribute('nazwa atrybutu', 'wlasciwosc')
+
+const link = document.querySelector('.a');
+const img = document.querySelector('img');
+const h2 = document.querySelector('h1');
+
+
+// link.setAttribute('target', '_blank')
+
+// //getAttribute - pobiera zawartosc atrybutu
+
+// console.log(img.getAnimations('alt'));
+
+// //hasAttribute - sprawdzamy czy dany element posiada jakis atrybut za pomoca true i false
+
+// const hasAtr = img.hasAttribute('alt');
+// console.log(hasAtr);
+
+
+h2.removeAttribute('style');
+// usuwa wskazany atrybut
