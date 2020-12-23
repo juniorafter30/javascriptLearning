@@ -910,6 +910,8 @@ tagName
 Zwraca nazwę elementu.
 textContent
 Pobiera/ustawia zawartość tekstu elementu włączając jego potomków.
+
+
 Metody
 addEventListener
 Pozwala zarejestrować obserwatora zdarzeń dla celu zdarzenia.
@@ -1023,3 +1025,36 @@ transitionstart	    odpalane, gdy transition css się zacznie
 transitionend	    odpalane, gdy transition css się zakończy
 transitionrun	    odpalane, gdy transition zostanie stworzone (odpalane przed rozpoczęciem opóźnienia)
 */
+
+
+
+// STYLOWANIE w Js - wlasciwosci identyczne jak w css
+// nazwazmiennej.style.wlasciwosc = "wartosc stylu";
+// nazwy dwuczlonowe styli piszemy w notacji wielbladziej
+
+//ADD REMOVE AND TOGGLE;
+
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const btn3 = document.querySelector('.btn3');
+const p = document.querySelector('p');
+
+//callback
+const dodaj = () => p.classList.add('new-color');
+btn1.addEventListener('click', dodaj);
+
+// funkcja anonimowa
+btn2.addEventListener('click', function() {p.classList.remove('new-color')});
+
+//funkcja zadeklarowana
+
+function toggle (){
+    p.classList.toggle('new-color')
+};
+
+btn3.addEventListener('click', toggle);
+
+
+//Zadanie 1
+
+

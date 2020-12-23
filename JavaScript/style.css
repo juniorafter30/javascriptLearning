@@ -9,5 +9,19 @@ button{
     text-align: center;
     background: none;
     padding: 20px;
-    margin-left: 50%;
+    margin: 10px
+}
+
+.butony {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    color: blue;
+}
+
+.new-color{
+    color: blue;
 }
