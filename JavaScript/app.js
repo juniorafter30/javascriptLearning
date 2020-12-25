@@ -1143,3 +1143,25 @@ const h2 = document.querySelector('h1');
 
 h2.removeAttribute('style');
 // usuwa wskazany atrybut
+
+
+
+
+// RELACJE RODZINNE W Js
+
+// const ul = document.querySelector('ul');
+// const firstLi = document.querySelector('li:first-child')
+
+// console.log(firstLi.parentElement);
+
+
+
+// DATASET
+
+//<div data-name="text" data-more-info="info"></div>
+
+const data = document.querySelector(".data-set");
+
+console.log(data.dataset.text);
+
+
